@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/RegisterFormStyles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--<div class="container">
+        <h1>Register Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="formGroupExampleInput">First Name</label>
+                <input type="text" class="form-control" placeholder="FirstName">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Last Name</label>
+                <input type="text" class="form-control" placeholder="LastName">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Email</label>
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Password</label>
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-group SubmitButton">
+                <input type="submit" class="form-control" id="SubmitButton" value="Submit">
+            </div>
+        </form>
+    </div>
+    -->
+    <div class="container mainForm buttons">
+        <div class="form-item">
+            <button class="btn btn-primary " type="button" data-toggle="collapse"
+                data-target=".multi-collapse" aria-expanded="true"
+                aria-controls="FirstNameField LastNameField EmaliField PasswordField SubmitField">
+                Sign up
+            </button>
+            <button class="btn btn-primary " type="button" data-toggle="collapse" data-target=".multi-collapse2"
+                aria-expanded="false" aria-controls="EmailFieldIn PasswordFieldIn SubmitFieldIn">
+                Sign in
+            </button>
+        </div>
+        <div class="form-container signUp">
+            <form>
+                <div class="collapse multi-collapse container form-item" id="FirstNameField">
+                    <label for="formGroupExampleInput">First Name</label>
+                    <input type="text" class="form-control" placeholder="FirstName">
+                </div>
+                <div class="collapse multi-collapse container form-item" id="LastNameField">
+                    <label for="formGroupExampleInput">Last Name</label>
+                    <input type="text" class="form-control" placeholder="LastName">
+                </div>
+                <div class="collapse multi-collapse container form-item" id="EmaliField">
+                    <label for="formGroupExampleInput">Email</label>
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="collapse multi-collapse container form-item" id="PasswordField">
+                    <label for="formGroupExampleInput">Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="collapse multi-collapse container sub form-item" id="SubmitField">
+                    <input type="submit" class="form-control" id="SubmitButton" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div class="form-container signIn">
+            <form>
+                <div class="collapse.in multi-collapse2 container form-item" id="EmailFieldIn">
+                    <label for="formGroupExampleInput">Email</label>
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="collapse.in multi-collapse2 container form-item" id="PasswordFieldIn">
+                    <label for="formGroupExampleInput">Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="collapse.in multi-collapse2 container sub form-item" id="SubmitFieldIn">
+                    <input type="submit" class="form-control" id="SubmitButton" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
