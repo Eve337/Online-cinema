@@ -1,0 +1,73 @@
+body {
+    background-color:#c2e7f0;
+}
+.nav{ 
+    background:#F97300;
+} /*background for nav*/
+/*.nav-link{ color: #f4f4f4; }
+.nav-link{ margin-right: 0em }*/
+.nav-link:hover{ 
+    background: #f4f4f4; cursor: pointer;
+}
+
+.placesField {
+    margin-top: 10px;
+    height: 720px;
+    width: 720px;
+    background-color: beige;
+}
+
+.onePlace {
+    height: 70px;
+    width: 70px;
+    background: burlywood;
+    margin: 5px;
+}
+.row .active {
+    background-color: #a5142a;
+}
+
+.legend {
+    height: 200px;
+    width: 720px;
+    padding: 0px;
+    margin-top: 10px;
+}
+.reserve {
+    width: 20px;
+    height: 20px;
+    background-color: teal;
+    position: relative;
+    border-radius: 45%;
+    padding: 0px;
+    
+}
+.available {
+    width: 20px;
+    height: 20px;
+    background-color:burlywood;
+    position: relative;
+    border-radius: 45%;
+    padding: 0px;
+    
+}
+
+.sold {
+    width: 20px;
+    height: 20px;
+    background-color:#5b5643;
+    position: relative;
+    border-radius: 45%;
+    padding: 0px;
+   
+}
+
+.yourChoice {
+    width: 20px;
+    height: 20px;
+    background-color:#a5142a;
+    position: relative;
+    border-radius: 45%;
+    padding: 0px;
+  
+}
