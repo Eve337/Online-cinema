@@ -1,0 +1,28 @@
+body {
+    background-color:#c2e7f0;
+}
+.nav{ background:#F97300;} /*background for nav*/
+/*.nav-link{ color: #f4f4f4; }
+.nav-link{ margin-right: 0em }*/
+.nav-link:hover{ background: #f4f4f4; cursor: pointer;}
+.navbar-collapse{ justify-content: flex-end;}
+.navbar-toggler{  background:#fff }
+
+.card-deck {
+    padding: 1%;
+    width: 100%;
+    margin-left:0px;
+}
+.card {
+    margin: 1%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#modal-footerText {
+    text-align: center;
+    margin: auto;
+}
