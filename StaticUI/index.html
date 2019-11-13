@@ -26,13 +26,13 @@
     <header>
         <ul class="nav">
             <li class="nav-item p-2 bd-highlight">
-                <a class="nav-link active">Home</a>
+                <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item p-2 bd-highlight">
-                <a class="nav-link active">Films</a>
+                <a class="nav-link active" href="#">Films</a>
             </li>
             <li class="nav-item p-2 bd-highlight">
-                <a class="nav-link active">Users</a>
+                <a class="nav-link active" href="#">Users</a>
             </li>
             <li class="nav-item ml-auto p-2 bd-highlight" data-toggle="modal" data-target="#SignUpModal">
                 <a class="nav-link active">Sign up</a>
@@ -40,9 +40,10 @@
         </ul>
     </header>
     <main>
+        <h1 class="display-3" id="titleSection">Current movies in the cinema</h1>
         <div class="card-deck">
             <div class="card">
-                <img class="card-img-top" src="img/1234848.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/VqcWgIfEJf0.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Текст</h5>
                     <p class="card-text">Главный герой — 27-летний Илья Горюнов, семь лет отсидевший в тюрьме по ложному
@@ -62,7 +63,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="img/1025082.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/vviS29Uir1I.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Терминатор: Тёмные судьбы</h5>
                     <p class="card-text">Сара Коннор превратилась в настоящую охотницу за терминаторами и теперь
@@ -78,7 +79,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="img/916498.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/eCuocDvLiOE.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Малефисента: Владычица тьмы</h5>
                     <p class="card-text">Действие происходит через несколько лет после того, как Малефисента наложила
@@ -93,49 +94,98 @@
                 </div>
             </div>
         </div>
-        <!--sign up modal-->
-
-        <div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+        <h2 class="display-3" id="titleSection">Classic movies in the cinema</h1>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="img/NevskiyTop1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Разборка в Маниле</h5>
+                        <p class="card-text">Частные детективы Ник и Чарли живут и работают в Маниле. Расследование
+                            убийства выводит их на след международного террориста по кличке Призрак, лагерь которого
+                            находится в филиппинских джунглях. Не доверяя полиции, Ник и Чарли собирают небольшую
+                            команду смельчаков и отправляются в логово Призрака, которое охраняет армия
+                            наемников-головорезов.</p>
+                        <button type="button" class="btn btn-success">Buy ticket</button>
+                        <button type="button" class="btn btn-warning">Book a ticket</button>
                     </div>
-                    <div class="modal-body">
-                        <form>
-                            <form>
-                                <div class="form-group">
-                                    <label for="formGroupExampleInput">First Name</label>
-                                    <input type="text" class="form-control" placeholder="FirstName">
-                                </div>
-                                <div class="form-group">
-                                    <label for="formGroupExampleInput">Last Name</label>
-                                    <input type="text" class="form-control" placeholder="LastName">
-                                </div>
-                                <div class="form-group">
-                                    <label for="formGroupExampleInput">Email</label>
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="formGroupExampleInput">Password</label>
-                                    <input type="password" class="form-control" placeholder="Password">
-                                </div>
-                                <div class="form-group SubmitButton">
-                                    <input type="submit" class="form-control" id="SubmitButton" value="Submit">
-                                </div>
-                            </form>
-                        </form>
+                    <div class="card-footer">
+                        <small class="text-muted">Last ticket was sold 05.11</small>
                     </div>
-                    <div class="modal-footer">
-                        <p id="modal-footerText">I already have an account. <a href="#">Sign in</a></p>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="img/NevskiyTop2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Максимальный удар</h5>
+                        <p class="card-text">Лучшим агентам ФСБ и ЦРУ предстоит совместная миссия — остановить
+                            преступного лидера, похитившего внучку госсекретаря США, который прибыл в Москву с тайным
+                            визитом. В случае провала миру грозит взрывоопасный кризис.
+                        </p>
+                        <button type="button" class="btn btn-success">Buy ticket</button>
+                        <button type="button" class="btn btn-warning">Book a ticket</button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last ticket was sold 5 hours ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="img/NevskiyTop3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Чёрная роза</h5>
+                        <p class="card-text">Майор московской полиции отправляется в Лос-Анджелес для помощи местным
+                            стражам порядка в расследовании серии убийств русских эмигрантов. Вместе с американской
+                            напарницей российский полицейский начинает погоню за новым Джеком Потрошителем.</p>
+                        <button type="button" class="btn btn-success">Buy ticket</button>
+                        <button type="button" class="btn btn-warning">Book a ticket</button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last ticket was sold 3 mins ago</small>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <!--sign up modal-->
+
+            <div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput">First Name</label>
+                                        <input type="text" class="form-control" placeholder="FirstName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput">Last Name</label>
+                                        <input type="text" class="form-control" placeholder="LastName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput">Email</label>
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput">Password</label>
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="form-group SubmitButton">
+                                        <input type="submit" class="form-control" id="SubmitButton" value="Submit">
+                                    </div>
+                                </form>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <p id="modal-footerText">I already have an account. <a href="#">Sign in</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
 </body>
 

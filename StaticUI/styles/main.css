@@ -1,9 +1,8 @@
 body {
     background-color:#c2e7f0;
 }
-.nav{ background:#F97300;} /*background for nav*/
-/*.nav-link{ color: #f4f4f4; }
-.nav-link{ margin-right: 0em }*/
+
+.nav{ background:#F97300;} 
 .nav-link:hover{ background: #f4f4f4; cursor: pointer;}
 .navbar-collapse{ justify-content: flex-end;}
 .navbar-toggler{  background:#fff }
@@ -15,6 +14,7 @@ body {
 }
 .card {
     margin: 1%;
+    
 }
 
 a {
@@ -25,4 +25,8 @@ a {
 #modal-footerText {
     text-align: center;
     margin: auto;
+}
+
+#titleSection {
+    text-align: center;
 }
