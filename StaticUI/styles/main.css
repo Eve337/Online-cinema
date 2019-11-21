@@ -30,3 +30,7 @@ a {
 #titleSection {
     text-align: center;
 }
+
+.DisabledSection {
+    display: none;
+}

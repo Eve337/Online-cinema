@@ -15,3 +15,11 @@ h1 {
     width: 100%;
     position: relative;
 }
+
+.title {
+    text-align: center;
+}
+
+.DisabledSection {
+    display: none;
+}
