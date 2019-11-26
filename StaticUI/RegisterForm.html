@@ -50,41 +50,41 @@
                 Sign in
             </button>
         </div>
-        <div class="form-container signUp DisabledSection" id = "FormSignUP">
-            <form>
+        <div class="form-container signUp DisabledSection" id="FormSignUP">
+            <form action="index.html" onsubmit="return formCheckerSignUP(this)">
                 <div class="container form-item" id="FirstNameField">
                     <label for="formGroupExampleInput">First Name</label>
-                    <input type="text" class="form-control" placeholder="FirstName">
+                    <input type="text" class="form-control" placeholder="FirstName" name="fname" required>
                 </div>
                 <div class="container form-item" id="LastNameField">
                     <label for="formGroupExampleInput">Last Name</label>
-                    <input type="text" class="form-control" placeholder="LastName">
+                    <input type="text" class="form-control" placeholder="LastName" name="lname" required>
                 </div>
                 <div class="container form-item" id="EmaliField">
                     <label for="formGroupExampleInput">Email</label>
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" class="form-control" placeholder="Email" name="email" required>
                 </div>
                 <div class="container form-item" id="PasswordField">
                     <label for="formGroupExampleInput">Password</label>
-                    <input type="password" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control" placeholder="Password" name="pass" required>
                 </div>
                 <div class="container sub form-item" id="SubmitField">
-                    <input type="submit" class="form-control" id="SubmitButton1" value="Submit">
+                    <input type="submit" class="form-control" id="SubmitButtonUP" value="Submit">
                 </div>
             </form>
         </div>
         <div class="form-container signIn" id="FormSignIN">
-            <form onsubmit="return submitButton(this)">
+            <form action="index.html" onsubmit="return formCheckerSignIN(this)">
                 <div class="container form-item" id="EmailFieldIn">
                     <label for="formGroupExampleInput">Email</label>
-                    <input type="email" class="form-control" placeholder="Email" name="login">
+                    <input type="email" class="form-control email-sign-in" placeholder="Email" name="login" required>
                 </div>
                 <div class="container form-item" id="PasswordFieldIn">
                     <label for="formGroupExampleInput">Password</label>
-                    <input type="password" class="form-control" placeholder="Password" name="password">
+                    <input type="password" class="form-control pass-sign-in" placeholder="Password" name="password" required>
                 </div>
                 <div class="container sub form-item" id="SubmitFieldIn">
-                    <input type="submit" class="form-control" id="SubmitButton" value="Submit">
+                    <input type="submit" class="form-control" id="SubmitButtonIN" value="Submit">
                 </div>
             </form>
         </div>
