@@ -18,6 +18,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="script/ContentFill.js" defer>
+    </script>
     <title>Online-Cinema</title>
 </head>
 
@@ -37,153 +39,14 @@
         </ul>
     </header>
     <main>
-        <h1 class="display-3" id="titleSection">Current movies in the cinema</h1>
-        <div class="card-deck">
-            <div class="card">
-                <img class="card-img-top" src="img/VqcWgIfEJf0.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Текст</h5>
-                    <p class="card-text">Главный герой — 27-летний Илья Горюнов, семь лет отсидевший в тюрьме по ложному
-                        обвинению в распространении наркотиков. Когда Илья выходит на свободу, он понимает, что прежняя
-                        жизнь, по которой он тосковал, разрушена, и вернуться к ней он больше не сможет. Хотя он не
-                        собирался мстить человеку, который отправил его в тюрьму, другого выхода теперь нет.
-                        Встретившись лицом к лицу со своим обидчиком, Илья совершает необдуманный поступок, после
-                        которого главный герой получает доступ к смартфону Петра, а с ним и к жизни молодого человека —
-                        его фотографиям и видео, перепискам с родителями и девушкой Ниной, к странным, полным недомолвок
-                        и угроз переговорам с коллегами. На время Илья становится для всех Петром — через текст на
-                        экране телефона.</p>
-                    <a class="btn btn-success" href="BuyPage.html" role="button">Buy ticket</a>
-                    <a class="btn btn-warning" href="BuyPage.html" role="button">Book a ticket</a>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last ticket was sold 05.11</small>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/vviS29Uir1I.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Терминатор: Тёмные судьбы</h5>
-                    <p class="card-text">Сара Коннор превратилась в настоящую охотницу за терминаторами и теперь
-                        занимается уничтожением роботов-убийц из будущего. Она считала, что главное — это не дать им
-                        добраться до Джона, но теперь появилась Дани Рамос, от выживания которой также зависит судьба
-                        человечества. Вместе с ней в бой вступает и загадочная девушка Грейс, смесь человека и машины.
-                    </p>
-                    <a class="btn btn-success" href="BuyPage.html" role="button">Buy ticket</a>
-                    <a class="btn btn-warning" href="BuyPage.html" role="button">Book a ticket</a>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last ticket was sold 5 hours ago</small>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/eCuocDvLiOE.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Малефисента: Владычица тьмы</h5>
-                    <p class="card-text">Действие происходит через несколько лет после того, как Малефисента наложила
-                        злые чары на принцессу Аврору. Фильм рассказывает про сложную взаимосвязь между тёмной феей и
-                        будущей королевой, о новых союзниках и противниках в деле защиты волшебного леса и магических
-                        существах, которые в нем обитают.</p>
-                    <a class="btn btn-success" href="BuyPage.html" role="button">Buy ticket</a>
-                    <a class="btn btn-warning" href="BuyPage.html" role="button">Book a ticket</a>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last ticket was sold 3 mins ago</small>
-                </div>
-            </div>
+        <h1 class="display-3 titleSection" id="titleSectionCurrent">Current movies in the cinema</h1>
+        <div class="card-deck" id="current">
+        
+        </div> 
+        <h2 class="display-3 titleSection" id="titleSectionClassic">Classic movies in the cinema</h2>
+        <div class="card-deck" id = "classic">
+            
         </div>
-        <h2 class="display-3" id="titleSection">Classic movies in the cinema</h1>
-            <div class="card-deck">
-                <div class="card">
-                    <img class="card-img-top" src="img/NevskiyTop1.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Разборка в Маниле</h5>
-                        <p class="card-text">Частные детективы Ник и Чарли живут и работают в Маниле. Расследование
-                            убийства выводит их на след международного террориста по кличке Призрак, лагерь которого
-                            находится в филиппинских джунглях. Не доверяя полиции, Ник и Чарли собирают небольшую
-                            команду смельчаков и отправляются в логово Призрака, которое охраняет армия
-                            наемников-головорезов.</p>
-                        <a class="btn btn-success" href="BuyPage.html" role="button">Buy ticket</a>
-                        <a class="btn btn-warning" href="BuyPage.html" role="button">Book a ticket</a>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last ticket was sold 05.11</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="img/NevskiyTop2.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Максимальный удар</h5>
-                        <p class="card-text">Лучшим агентам ФСБ и ЦРУ предстоит совместная миссия — остановить
-                            преступного лидера, похитившего внучку госсекретаря США, который прибыл в Москву с тайным
-                            визитом. В случае провала миру грозит взрывоопасный кризис.
-                        </p>
-                        <a class="btn btn-success" href="BuyPage.html" role="button">Buy ticket</a>
-                        <a class="btn btn-warning" href="BuyPage.html" role="button">Book a ticket</a>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last ticket was sold 5 hours ago</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="img/NevskiyTop3.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Чёрная роза</h5>
-                        <p class="card-text">Майор московской полиции отправляется в Лос-Анджелес для помощи местным
-                            стражам порядка в расследовании серии убийств русских эмигрантов. Вместе с американской
-                            напарницей российский полицейский начинает погоню за новым Джеком Потрошителем.</p>
-                        <a class="btn btn-success" href="BuyPage.html" role="button">Buy ticket</a>
-                        <a class="btn btn-warning" href="BuyPage.html" role="button">Book a ticket</a>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last ticket was sold 3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-
-            <!--sign up modal
-
-            <div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="formGroupExampleInput">First Name</label>
-                                        <input type="text" class="form-control" placeholder="FirstName">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="formGroupExampleInput">Last Name</label>
-                                        <input type="text" class="form-control" placeholder="LastName">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="formGroupExampleInput">Email</label>
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="formGroupExampleInput">Password</label>
-                                        <input type="password" class="form-control" placeholder="Password">
-                                    </div>
-                                    <div class="form-group SubmitButton">
-                                        <input type="submit" class="form-control" id="SubmitButton" value="Submit">
-                                    </div>
-                                </form>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <p id="modal-footerText">I already have an account. <a href="#">Sign in</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
     </main>
 </body>
 
