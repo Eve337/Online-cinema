@@ -21,7 +21,14 @@ function getFilmList() {
 function formCheckerSignIN(form) {
     let loginValue = (form.elements.login.value);
     let emailValue = (form.elements.password.value);
-    return userCheckSignIN(xhr.response, loginValue, emailValue), getFilmList();
+    if(userCheckSignIN(xhr.response, loginValue, emailValue)){
+        getFilmList();
+        return true;
+    }
+    else {
+        return false;
+    }
+     
 }
 
 function userCheckSignIN(obj, log, pass) {

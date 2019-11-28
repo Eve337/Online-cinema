@@ -11,20 +11,43 @@ body {
 }
 
 .placesField {
+    position: relative;
+    left: 30%;
+    width: 40%;
     margin-top: 10px;
     height: 720px;
-    width: 720px;
     background-color: beige;
     margin-right: 0px;
     margin-left: 0px;
     
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0px; 
+    padding-left: 0px;
+}
+
+.row {
+    height: 9%;
+    width: 100%;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 0px; 
+    
+}
+
 .onePlace {
-    height: 70px;
-    width: 70px;
+    position: relative;
+    height: 100%;
+    width: 9%;
     background: burlywood;
-    margin: 5px;
+    margin: 0.5%;
 }
 .row .active {
     background-color: #a5142a;
@@ -37,6 +60,18 @@ body {
     margin-top: 10px;
     
 }
+
+
+.actives {
+    background-color: #a5142a;
+}
+
+
+#buyTitle {
+    text-align: center;
+}
+
+/*
 .reserve {
     width: 20px;
     height: 20px;
@@ -74,21 +109,7 @@ body {
     border-radius: 45%;
     padding: 0px;
   
-}
-
-.rowNumber {
-    height: 720px;
-    width: 70px;
-    background-color: beige;
-    margin-right: 0;
-    margin-top: 10px;
-    padding-right: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 5px;
-}
-
-.controller {
+    .controller {
     position: relative;
     justify-content: center;
     align-items: center;
@@ -96,15 +117,4 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
-
-.cell {
-    height: 70px;
-    margin: 5px;
-    list-style-type: none;
-    border: 0px solid rgba(0,0,0,.125);
-    background-color: beige;
-}
-
-#buyTitle {
-    text-align: center;
-}
+}*/

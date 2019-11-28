@@ -20,7 +20,6 @@ function fillContent() {
 function createFilmCart(obj, key, cardGroup) {
     console.log(filmsList);
 
-
     const card = document.createElement("DIV");
     card.classList.add("card");
     console.log(cardGroup);
