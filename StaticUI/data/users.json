@@ -14,6 +14,7 @@
         "password": "1111",
         "admin": false,
         "firstName": "Petya",
-        "lastName": "Petrovich"
+        "lastName": "Petrovich",
+        "deleteRequest": false
     }
 }

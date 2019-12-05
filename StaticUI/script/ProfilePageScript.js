@@ -1,19 +1,12 @@
-const yourTicketsButt = document.querySelector("tickButton");
-const profileButton = document.querySelector("profileButton");
-const profileFilmTable = document.querySelector("profileFilmTable");
-const profileForm = document.querySelector("profileForm");
+const $getCurrentUser = JSON.parse(localStorage.getItem("currentUser"));
 
-yourTicketsButt.addEventListener("click", function () {
-    if (profileFilmTable.classList.contains("DisabledSection")) {
-        profileFilmTable.classList.remove("DisabledSection");
-        profileForm.classList.add("DisabledSection");
-    }
-});
+function editUserValuesFunc (){
+    console.log("success");
+    $getCurrentUser.firstName = $(".changeFirstName").val();
+    $getCurrentUser.lastName = $(".changeLastName").val();
+    $getCurrentUser.deleteRequest = $(".delRequest").val();
+    localStorage.setItem("currentUser",JSON.stringify($getCurrentUser));
+    return true;
+}
 
-profileButton.addEventListener("click", function () {
-    if (
-        profileForm.classList.contains("DisabledSection")) {
-        profileForm.classList.remove("DisabledSection");
-        profileFilmTable.classList.add("DisabledSection");
-    }
-});
+

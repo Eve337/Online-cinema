@@ -1,34 +1,35 @@
-const xhr = new XMLHttpRequest();
-xhr.open('GET', 'data/users.json', true);
-xhr.responseType = 'json';
-xhr.send();
-xhr.onload = function () {
-    let responseObj = xhr.response;
-    return responseObj;
-};
+localStorage.clear();
+let dataUsers;
+let dataFilms;
 
-function getFilmList() {
-    xhr.open('GET', 'data/films.json', true);
-    xhr.responseType = 'json';
-    xhr.send();
-    xhr.onload = function () {
-        localStorage.setItem('filmsList', JSON.stringify(xhr.response));
-    };
-}
+fetch('data/users.json')
+    .then(response => response.json())
+    .then(data => {
+        dataUsers = data;
+        return dataUsers;
+    });
 
-
+fetch('data/films.json')
+    .then(response => response.json())
+    .then(data => {
+        dataFilms = data;
+        localStorage.setItem('filmsList', JSON.stringify(dataFilms));
+        return dataFilms;
+    });
 
 function formCheckerSignIN(form) {
     let loginValue = (form.elements.login.value);
     let emailValue = (form.elements.password.value);
-    if(userCheckSignIN(xhr.response, loginValue, emailValue)){
+    if (userCheckSignIN(dataUsers, loginValue, emailValue)) {
+        if (loginValue === "admin@mail.ru") {
+            form.action = "AdminPage.html";
+        }
         getFilmList();
         return true;
-    }
-    else {
+    } else {
         return false;
     }
-     
+
 }
 
 function userCheckSignIN(obj, log, pass) {
@@ -45,14 +46,12 @@ function userCheckSignIN(obj, log, pass) {
     return tagTrue;
 }
 
-
 function userCheckSignUP(obj, log) { //Сhecking the existence of an account with the same mail
     let tagTrue = true;
     for (let key in obj) {
         if (obj[key]["email"] === log) {
             console.log("This email already using");
             tagTrue = false;
-            //handler invalid
         }
     }
     return tagTrue;
@@ -61,10 +60,10 @@ function userCheckSignUP(obj, log) { //Сhecking the existence of an account wit
 function formCheckerSignUP(form) {
     let newUserObj = {};
     let loginValue = (form.elements.email.value);
-    let userCheckSignUp = userCheckSignUP(xhr.response, loginValue);
+    let userCheckSignUp = userCheckSignUP(dataUsers, loginValue);
 
     if (userCheckSignUp) {
-        const objer = xhr.response;
+        const objer = dataUsers;
 
         newUserObj.id = Object.keys(objer).length + 1;
         newUserObj.email = form.elements.email.value;

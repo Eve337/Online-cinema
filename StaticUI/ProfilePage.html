@@ -19,6 +19,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="script/ProfilePageScript.js" defer></script>
     <title>Online-Cinema</title>
 </head>
 
@@ -31,28 +33,28 @@
             </li>
             
             <li class="nav-item ml-auto p-2 bd-highlight">
-                <a class="nav-link active">Profile</a>
+                <a class="nav-link active" href="RegisterForm.html">Sign out</a>
             </li>
         </ul>
     </header>
     <main>
         <h3 class="display-3" id="ProfileTitle">Profile info</h3>
-        <div class="form-container profileForm">
-            <form>
+        <div class="form-container profileForm" >
+            <form class="newUserValues" onsubmit="return editUserValuesFunc()">
                 <div class="container form-item" id="FirstNameField">
                     <label for="formGroupExampleInput">New First Name</label>
-                    <input type="text" class="form-control" placeholder="FirstName">
+                    <input type="text" class="form-control changeFirstName" placeholder="FirstName" value="Lupa">
                 </div>
                 <div class="container form-item" id="LastNameField">
                     <label for="formGroupExampleInput">New Last Name</label>
-                    <input type="text" class="form-control" placeholder="LastName">
+                    <input type="text" class="form-control changeLastName" placeholder="LastName" value="Pupa">
                 </div>
                 <div class="container form-item" id="LastNameField">
                     <label for="formGroupExampleInput">Delete Request</label>
-                    <input type="checkbox">
+                    <input type="checkbox" class="delRequest">
                 </div>
                 <div class="container sub form-item" id="SubmitField">
-                    <input type="submit" class="form-control" id="SubmitButton" value="Apply Changes">
+                    <input type="submit" class="form-control submitProfileForm" id="SubmitButton" value="Apply Changes">
                 </div>
             </form>
         </div>
