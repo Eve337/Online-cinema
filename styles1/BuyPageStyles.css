@@ -1,0 +1,120 @@
+body {
+    background-color:#c2e7f0;
+}
+.nav{ 
+    background:#F97300;
+} /*background for nav*/
+/*.nav-link{ color: #f4f4f4; }
+.nav-link{ margin-right: 0em }*/
+.nav-link:hover{ 
+    background: #f4f4f4; cursor: pointer;
+}
+
+.placesField {
+    position: relative;
+    left: 30%;
+    width: 40%;
+    margin-top: 10px;
+    height: 720px;
+    background-color: beige;
+    margin-right: 0px;
+    margin-left: 0px;
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0px; 
+    padding-left: 0px;
+}
+
+.row {
+    height: 9%;
+    width: 100%;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 0px; 
+    
+}
+
+.onePlace {
+    position: relative;
+    height: 100%;
+    width: 9%;
+    background: burlywood;
+    margin: 0.5%;
+}
+.row .active {
+    background-color: #a5142a;
+}
+
+.legend {
+    height: 200px;
+    width: 720px;
+    padding: 0px;
+    margin-top: 10px;
+    
+}
+
+
+.actives {
+    background-color: #a5142a;
+}
+
+
+#buyTitle {
+    text-align: center;
+}
+
+/*
+.reserve {
+    width: 20px;
+    height: 20px;
+    background-color: teal;
+    position: relative;
+    border-radius: 45%;
+    padding: 0px;
+    
+}
+.available {
+    width: 20px;
+    height: 20px;
+    background-color:burlywood;
+    position: relative;
+    border-radius: 45%;
+    padding: 0px;
+    
+}
+
+.sold {
+    width: 20px;
+    height: 20px;
+    background-color:#5b5643;
+    position: relative;
+    border-radius: 45%;
+    padding: 0px;
+   
+}
+
+.yourChoice {
+    width: 20px;
+    height: 20px;
+    background-color:#a5142a;
+    position: relative;
+    border-radius: 45%;
+    padding: 0px;
+  
+    .controller {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+}*/
