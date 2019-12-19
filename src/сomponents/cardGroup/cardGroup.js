@@ -4,7 +4,7 @@ import Card from './../card/card';
 
 function CardGroup () {
     return(
-        <div className="card-deck" id="current">
+        <div className="card-deck">
             <Card />
             <Card />
             <Card />

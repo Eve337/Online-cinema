@@ -1,14 +1,13 @@
 import React from 'react';
-import NavBar from './сomponents/header/header';
-import Card from './сomponents/card/card';
-import CardGroup from './сomponents/cardGroup/cardGroup';
+//import MainPage from './pages/mainPage/mainPage';
+//import ProfilePage from './pages/profilePage/ProfilePage';
+import RegisterPage from './pages/registerPage/RegisterPage';
 import './main.css';
 
 function App() {
   return (
     <div className="App">
-     <NavBar />
-     <CardGroup />
+     <RegisterPage />
     </div>
   );
 }
